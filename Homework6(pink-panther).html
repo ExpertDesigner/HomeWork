@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+	<title>CSS badge</title>
+	<style type="text/css">
+	body{
+		background: #FFB2B2 url('pink_panther.gif') no-repeat left top;
+		margin-left: 400px;
+		margin-top: 50px;
+	}
+	.one h1{
+		text-transform: capitalize;
+		text-indent: -30px;
+		line-height: 40px;
+		direction: ltr;
+		word-spacing: 30px;
+	}
+	.one .red{
+		text-decoration: overline underline line-through;
+		letter-spacing: -4px;
+		font-style: italic;
+		font-size: 0.790em;
+	}
+	.one .pink{
+		background-color: #FF99FF;
+		color: #FFF;
+		text-align: right;
+		letter-spacing: 4px;
+	}
+	.one .panther{
+		background-color: #FFF;
+		color: #FF99FF;
+		text-align: right;
+		letter-spacing: 4px;
+	}
+	.two p{
+		white-space: nowrap;
+		font:bold 1.680em "Calibri";
+		font-variant: small-caps;
+	}
+	.two img{
+		vertical-align: text-top;
+	}
+	.three table.ia{
+		border: 1px solid black;
+		width: 100%;
+		height: 100px;
+	}
+	.three table.ia, td{
+		border-collapse: collapse;
+		text-align: center;
+		vertical-align: bottom;
+	}
+	.three table.iia{
+		width: 100%;
+		height: 100px;
+		border: 4px solid black;
+		background-color: #FFD6FF;
+	}
+	.three table.iia, td{
+		padding:15px 6px 8px 20px;
+	}
+	.three table.iia caption{
+		caption-side:bottom;
+	}
+	</style>
+</head>
+<body>
+	<div class="one">
+		<h1>
+			<span class="red">red</span>
+			<br /> 
+			<span class="pink">pink</span> 
+			<span class="panther">panther</span>
+		</h1>	
+	</div>
+	<div class="two">
+		<p>
+			Pink Panther Is Pretty Panther.Pink Panther Is Pretty Panther.Pink Panther Is Pretty Panther.Pink Panther Is Pretty Panther.
+		<img src="img1.gif" alt="pink" width="130" height="100" />
+			pink panther is pretty panther.pink panther is pretty panther.pink panther is pretty panther.pink panther is pretty panther.pink panther is pretty panther.
+		</p>
+	</div>
+	<div class="three">
+		<table class="ia">
+			<tr>
+				<td>name</td>
+				<td>gender</td>
+				<td>color</td>
+			</tr>
+			<tr>
+				<td>pink panther</td>
+				<td>panther</td>
+				<td>pink</td>
+			</tr>
+		</table>
+		<br />
+		<br />
+		<br />
+		<table class="iia">
+			<caption>Table IIA</caption>
+			<tr>
+				<td>name</td>
+				<td>gender</td>
+				<td>color</td>
+			</tr>
+			<tr>
+				<td>pink panther</td>
+				<td>panther</td>
+				<td>pink</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

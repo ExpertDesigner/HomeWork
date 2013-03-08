@@ -1,0 +1,401 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+	<title>Expert Designer</title>
+ 	<style type="text/css">
+	 	html,body{
+	 		background-image: url('tile.jpg');
+			width: 100%;
+			height: 100%;
+			padding: 0;
+			margin: 0;
+		}
+	 	#container{
+	 		width: 100%;
+	 		height: 100%;
+	 	}
+	 	#header{
+	 		background-image: url('header.png');
+	 		height: 130px;
+	 		text-align: center;
+	 	}
+	 	#main-section{
+	 		margin-right: auto;
+	 		margin-left: auto;
+	 	}
+	 	.section1{
+	 		margin-bottom: 10px;
+	 	}
+	 	.section2{
+	 		margin-bottom: 39px;
+	 	}
+	 	.section3{
+	 		margin-bottom: 21px;
+	 	}
+	 	#portfolio{
+	 		width: 299px;
+	 		height: 198px;
+	 	}
+	 	 div.portfolio{
+			width: 299px;
+			height: 198px;
+		}
+		div.portfolio:hover .img1{
+			display: none;
+		}
+		div.portfolio:hover .img2{
+			display: inline;
+		}
+		div.portfolio .img2{
+			display: none;
+		}
+		#archive{
+			width: 299px;
+	 		height: 368px;
+		}
+		div.archive{
+			width: 299px;
+			height: 368px;
+		}
+		div.archive:hover .img1{
+			display: none;
+		}
+		div.archive:hover .img2{
+			display: inline;
+		}
+		div.archive .img2{
+			display: none;
+		}
+		#services{
+			width: 299px;
+	 		height: 350px;
+		}
+		div.services{
+			width: 299px;
+			height: 350px;
+		}
+		div.services:hover .img1{
+			display: none;
+		}
+		div.services:hover .img2{
+			display: inline;
+		}
+		div.services .img2{
+			display: none;
+		}
+		#support{
+			width: 299px;
+	 		height: 188px;
+		}
+		div.support{
+			width: 299px;
+			height: 188px;
+		}
+		div.support:hover .img1{
+			display: none;
+		}
+		div.support:hover .img2{
+			display: inline;
+		}
+		div.support .img2{
+			display: none;
+		}
+		#people{
+			width: 299px;
+	 		height: 199px;
+		}
+		div.people{
+			width: 299px;
+			height: 199px;
+		}
+		div.people:hover .img1{
+			display: none;
+		}
+		div.people:hover .img2{
+			display: inline;
+		}
+		div.people .img2{
+			display: none;
+		}
+		#articles{
+			width: 299px;
+	 		height: 357px;
+		}
+		div.articles{
+			width: 299px;
+			height: 357px;
+		}
+		div.articles:hover .img1{
+			display: none;
+		}
+		div.articles:hover .img2{
+			display: inline;
+		}
+		div.articles .img2{
+			display: none;
+		}
+		#people{
+			width: 299px;
+	 		height: 199px;
+		}
+		div.people{
+			width: 299px;
+			height: 199px;
+		}
+		div.people:hover .img1{
+			display: none;
+		}
+		div.people:hover .img2{
+			display: inline;
+		}
+		div.people .img2{
+			display: none;
+		}
+		#contact{
+			width: 299px;
+	 		height: 181px;
+		}
+		div.contact{
+			width: 299px;
+			height: 181px;
+		}
+		div.contact:hover .img1{
+			display: none;
+		}
+		div.contact:hover .img2{
+			display: inline;
+		}
+		div.contact .img2{
+			display: none;
+		}
+		#about{
+			width: 299px;
+	 		height: 398px;
+		}
+		div.about{
+			width: 299px;
+			height: 398px;
+		}
+		div.about:hover .img1{
+			display: none;
+		}
+		div.about:hover .img2{
+			display: inline;
+		}
+		div.about .img2{
+			display: none;
+		}
+	 	.menu-name{
+			background-image: url('menu-name.png');
+			height: 70px;
+			width: 299px;
+			color: #E6E6E6;
+			text-align: center;
+			font-family: 'Conv_bankgothicmedium';
+			font-variant: small-caps;
+			letter-spacing: 4px;
+			font-size: 24px;
+	 	}
+	 	#footer{
+	 		background-image: url('footer.png');
+	 		height: 46.5px;
+	 	}
+	 	#bottom{
+	 		height: 40px;
+	 		width: 1200px;
+	 		margin-top: 6px;
+	 		margin-left: auto;
+	 		margin-right: auto;
+	 		font-size: 15px;
+	 		letter-spacing: 2px;
+	 		color: #E6E6E6;
+	 	}
+	 	.left{
+	 		width: 400px;
+	 		height: 30px;
+	 		float: left;
+	 	}
+	 	.center{
+	 		width: 400px;
+	 		height: 30px;
+	 		float: left;
+	 		text-align: center;
+	 		margin-top: 10px;
+	 	}
+	 	.right{
+	 		width: 350px;
+	 		height: 30px;
+	 		float: left;
+	 		text-align: right;
+	 		margin-top: 6px;
+	 	}
+	 	a.facebook .img2{
+	 		display: none;
+		}
+		a.facebook:hover .img2{
+			display: inline;
+		}
+		a.facebook:hover .img1{
+			display: none;
+		}
+		a.googleplus .img2{
+			display: none;
+		}
+		a.googleplus:hover .img2{
+			display: inline;
+		}
+		a.googleplus:hover .img1{
+			display: none;
+		}
+		a.twitter .img2{
+			display: none;
+		}
+		a.twitter:hover .img2{
+			display: inline;
+		}
+		a.twitter:hover .img1{
+			display: none;
+		}
+		a.github .img2{
+			display: none;
+		}
+		a.github:hover .img2{
+			display: inline;
+		}
+		a.github:hover .img1{
+			display: none;
+		}
+ 	</style>
+</head>
+<body>
+	<table id="container">
+		<tr>
+			<td id="header">
+				<img src="logo.png" alt="logo" width="348" height="65" />
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table id="main-section">
+					<tr>
+						<td class="main">
+							<table class="section1">
+								<tr>
+									<td id="portfolio">
+										<div class="portfolio">
+											<a href="#"><img class="img1" src="portfolio.jpg" alt="portfolio" width="299" height="198" /><img class="img2" src="portfoliocover.jpg" alt="portfoliocover" width="299" height="198" /></a>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="menu-name">Portfolio</td>
+								</tr>
+								<tr>
+									<td id="archive">
+										<div class="archive">
+											<a href="#"><img class="img1" src="archive.jpg" alt="archive" width="299" height="368" /><img class="img2" src="archivecover.jpg" alt="archivecover" width="299" height="368" /></a>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="menu-name">Archiv</td>
+								</tr>
+							</table>
+						</td>
+						<td class="main">	
+							<table class="section2">
+								<tr>
+									<td id="services">
+										<div class="services">
+											<a href="#"><img class="img1" src="services.jpg" alt="services" width="299" height="350" /><img class="img2" src="servicescover.jpg" alt="servicescover" width="299" height="350" /></a>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="menu-name">Services</td>
+								</tr>
+								<tr>
+									<td id="support">
+										<div class="support">
+											<a href="#"><img class="img1" src="support.jpg" alt="support" width="299" height="188" /><img class="img2" src="supportcover.jpg" alt="supportcover" width="299" height="188" /></a>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="menu-name">Support</td>
+								</tr>
+							</table>
+						</td>
+						<td class="main">	
+							<table class="section3">
+								<tr>
+									<td id="people">
+										<div class="people">
+											<a href="#"><img class="img1" src="people.jpg" alt="people" width="299" height="199" /><img class="img2" src="peoplecover.jpg" alt="peoplecover" width="299" height="199" /></a>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="menu-name">People</td>
+								</tr>
+								<tr>
+									<td id="articles">
+										<div class="articles">
+											<a href="#"><img class="img1" src="articles.jpg" alt="articles" width="299" height="357" /><img class="img2" src="articlescover.jpg" alt="articlescover" width="299" height="357" /></a>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="menu-name">Articles</td>
+								</tr>
+							</table>
+						</td>
+						<td class="main">	
+							<table class="section4">
+								<tr>
+									<td id="contact">
+										<div class="contact">
+											<a href="#"><img class="img1" src="contact.jpg" alt="contact" width="299" height="181" /><img class="img2" src="contactcover.jpg" alt="contactcover" width="299" height="181" /></a>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="menu-name">Contact</td>
+								</tr>
+								<tr>
+									<td id="about">
+										<div class="about">
+											<a href="#"><img class="img1" src="about.jpg" alt="about" width="299" height="398" /><img class="img2" src="aboutcover.jpg" alt="aboutcover" width="299" height="398" /></a>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="menu-name">About</td>
+								</tr>
+							</table>
+						</td>	
+					</tr>		
+				</table>	
+			</td>
+		</tr>
+		<tr>											
+			<td id="footer">
+				<div id="bottom">
+					<div class="left"></div>
+					<div class="center">© 2013 Expert Designer</div>
+					<div class="right">
+						<a class="facebook" href="#"><img class="img1" src="facebook.png" alt="facebook" title="Facebook" width="18" height="18" /><img class="img2" src="facebookcover.png" alt="facebookcover" title="Facebook" width="18" height="18" /></a>
+					
+						<a class="googleplus" href="https://plus.google.com/114107498892954278302/posts"><img class="img1" src="googleplus.png" title="Google+" alt="googleplus" width="20" height="20" /><img class="img2" src="googlepluscover.png" title="Google+" alt="googlepluscover" width="20" height="20" /></a>
+					
+						<a class="twitter" href="#"><img class="img1" src="twitter.png" alt="twitter" title="Twitter" width="20" height="20" /><img class="img2" src="twittercover.png" alt="twittercover" title="Twitter" width="20" height="20" /></a>
+					
+						<a class="github" href="https://github.com/ExpertDesigner"><img class="img1" src="github.png" alt="github" title="Github" width="18" height="18" /><img class="img2" src="githubcover.png" alt="githubcover" title="Github" width="18" height="18" /></a>
+					</div>
+				</div>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
